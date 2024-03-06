@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.win {
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			height: 200px;
+			width: 500px;
+			position: abasolute;
+			top: 500px;
+			padding-left: 150px;
+			padding-top: 80px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="win mx-auto">
+		<h3>Вы победили</h3>
+	</div>
+	<div class="col-7 bg-light mx-auto p">
+		<div>
+			<h1 class="task">Морской бой!</h1>
+			<h3 style="color: purple;" class="fourl">Корабль с 4 клетками - <span class="purple">1</span></h3>
+			<h3 style="color: green;" class="threel">Корабль с 3 клетками - <span class="green">2</span></h3>
+			<h3 style="color: blue;" class="twol">Корабль с 2 клетками - <span class="blue">3</span></h3>
+			<h3 style="color: yellow;" class="onel">Корабль с 1 клетками - <span class="yellow">4</span></h3>
+			<h1>Очки: <span class="score">0</span></h1>
+		</div>
+		<!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+			<div class="row">
+				<div class="col-1 px-5 py-3 text-center border">
+
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>1</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>2</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>3</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>4</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>5</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>6</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>7</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>8</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>9</h4>
+				</div>
+				<div class="col-1 px-5 py-3 text-center border">
+					<h4>10</h4>
+				</div>
+			</div>
+			<!--Линия А-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>A</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border two">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border two">
+
+				</div>
+			</div>
+			<!--Линия B-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>B</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border three">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border three">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border three">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			<!--Линия C-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>C</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			<!--Линия D-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>D</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border one">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border four">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			<!--Линия E-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>E</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border two">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border two">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border four">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border one">
+
+				</div>
+			</div>
+			<!--Линия F-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>F</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border four">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			<!--Линия G-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>G</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border four">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			<!--Линия H-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>H</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border three">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border three">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border three">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			<!--Линия I-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>I</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border two">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border one">
+
+				</div>
+			</div>
+			<!--Линия J-->
+			<div class="row">
+				<div class="col-1 px-5 py-4 text-center border">
+					<h4>J</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border one">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border two">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border meme">
+
+				</div>
+			</div>
+			
+		</div>
+
+<script type="text/javascript">
+	let meme = document.querySelectorAll(".meme")
+	let one = document.querySelectorAll(".one")
+	let two = document.querySelectorAll(".two")
+	let three = document.querySelectorAll(".three")
+	let four = document.querySelectorAll(".four")
+	let score = 0
+	let txt = document.querySelector(".score")
+	let p = document.querySelector(".p")
+	let win = document.querySelector(".win")
+	let fourl = document.querySelector(".fourl")
+	let onel = document.querySelector(".onel")
+	let twol = document.querySelector(".twol")
+	let threel = document.querySelector(".threel")
+	let green = document.querySelector(".green")
+	let score4 = 0
+	let score3 = 0
+	let score2 = 0
+	let score1 = 0
+
+	for(let x=0; x<80; x=x+1) {
+		meme[x].onclick = function() {
+			meme[x].style.backgroundImage = "url('point.png')"
+			meme[x].style.backgroundSize = "100% 100%"
+		}
+	}
+
+	for(let x=0; x<4; x=x+1) {
+		one[x].onclick = function() {
+			one[x].style.background = "yellow"
+			score = score + 1
+			txt.innerHTML = score
+			if (score >= 20) {
+				alert("Ты нашел все корабли")
+				p.style.display = "none"
+				win.style.display = "block"
+			}
+			score1 = score1 + 1
+			if (score1 == 4) {
+				onel.style.textDecoration = "line-through"
+				document.querySelector(".yellow").innerHTML = 0
+			}
+			if (score1 == 3) {
+				document.querySelector(".yellow").innerHTML = 1
+			}
+			if (score1 == 2) {
+				document.querySelector(".yellow").innerHTML = 2
+			}
+			if (score1 == 1) {
+				document.querySelector(".yellow").innerHTML = 3
+			}
+		}
+	}
+
+	for(let x=0; x<6; x=x+1) {
+		two[x].onclick = function() {
+			two[x].style.background = "blue"
+			score = score + 1
+			txt.innerHTML = score
+			if (score >= 20) {
+				alert("Ты нашел все корабли")
+				p.style.display = "none"
+				win.style.display = "block"
+			}
+			score2 = score2 + 1
+			if (score2 == 6) {
+				twol.style.textDecoration = "line-through"
+				document.querySelector(".blue").innerHTML = 0
+			}
+			if (score2 == 2) {
+				document.querySelector(".blue").innerHTML = 2
+			}
+			if (score2 == 4) {
+				document.querySelector(".blue").innerHTML = 1
+			}
+
+		}
+	}
+	for(let x=0; x<6; x=x+1) {
+		three[x].onclick = function() {
+			three[x].style.background = "green"
+			score = score + 1
+			txt.innerHTML = score
+			if (score >= 20) {
+				alert("Ты нашел все корабли")
+				p.style.display = "none"
+				win.style.display = "block"
+			}
+			score3 = score3 + 1
+			if (score3 == 6) {
+				threel.style.textDecoration = "line-through"
+				green.innerHTML = 0
+			}
+
+			if(score3 == 3){
+				green.innerHTML = 1
+			}
+
+		}
+	}
+	for(let x=0; x<4; x=x+1) {
+		four[x].onclick = function() {
+			four[x].style.background = "purple"
+			score = score + 1
+			txt.innerHTML = score
+			if (score >= 20) {
+				alert("Ты нашел все корабли")
+				p.style.display = "none"
+				win.style.display = "block"
+			}
+			score4 = score4 + 1
+			if (score4 == 4) {
+				fourl.style.textDecoration = "line-through"
+				document.querySelector(".purple").innerHTML = 0
+			}
+
+		}
+	}
+	
+	
+
+</script>
+</body>
+</html>
